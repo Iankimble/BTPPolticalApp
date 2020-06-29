@@ -24,13 +24,13 @@ class HomePage extends Component {
 
     // returns state office contests, representative information, and polling location(s) based on user address
     fetch(
-      `https://www.googleapis.com/civicinfo/v2/voterinfo?address=221%20East%20Washington%20Lane&electionId=2000&key=
+      `https://www.googleapis.com/civicinfo/v2/voterinfo?address=${process.env.REACT_APP_TEST_ADDRESS}&electionId=2000&key=
       ${process.env.REACT_APP_GOOGLE_API_KEY}`
     ).then((res) => console.log(res.json()));
 
     // returns information on local and federal represnetatives and offices
     fetch(
-      `https://www.googleapis.com/civicinfo/v2/representatives?address=221%20East%20Washington%20Lane&key=
+      `https://www.googleapis.com/civicinfo/v2/representatives?address=${process.env.REACT_APP_TEST_ADDRESS}&key=
       ${process.env.REACT_APP_GOOGLE_API_KEY}`
     ).then((res) => console.log(res.json()));
   }
