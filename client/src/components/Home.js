@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import { Form, Button } from "react-bootstrap";
 
+// data that is returned from api needs to be mapped
+// google calander implementation needs to be added
 class HomePage extends Component {
   constructor() {
     super();
