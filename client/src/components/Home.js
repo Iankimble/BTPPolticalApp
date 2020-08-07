@@ -42,10 +42,10 @@ class HomePage extends Component {
           <Form.Group role="form">
             <Form.Label>Enter your address</Form.Label>
             <Form.Control type="text" placeholder="Address" name="address" />
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
           </Form.Group>
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
         </Form>
         <hr />
         <b>Register to Vote</b>
